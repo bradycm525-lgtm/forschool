@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brady Monroe | NAU Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="bg-gradient-header text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Brady Monroe</h1>
+            <p class="lead">Sophomore at Northern Arizona University</p>
+            <a href="#" id="downloadBtn" class="btn btn-outline-light mt-3">
+                Download Resume (Downloads: <span id="downloadCount">0</span>)
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div id="greeting-container" class="text-center mb-5 h3 text-primary fw-bold"></div>
+
+        <section id="about" class="mb-5">
+            <h2 class="h2 border-bottom pb-2">About Me</h2>
+            <p>I was born in California and raised in Arizona. <b>I went to Mingus Union High School and took a coding class.</b> <em>I enjoy soccer, music, and gaming.</em></p>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <h2 class="h2 border-bottom pb-2 mb-4">Technical Skills</h2>
+            <div class="input-group mb-4 w-50">
+                <input type="text" id="skillInput" class="form-control" placeholder="Enter a new skill ">
+                <button id="addSkillBtn" class="btn btn-primary">Add Skill</button>
+            </div>
+            
+            <div id="skills-list" class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h3 class="h5 card-title fw-bold">Programming</h3>
+                            <p class="card-text">Proficient in HTML, Javascript, Python, and C.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2 class="h2 border-bottom pb-2 mb-4">Academic Projects</h2>
+            <div id="projects-container" class="row g-4 text-center"></div>
+        </section>
+
+        <section id="experience" class="mb-5">
+            <h2 class="h2 border-bottom pb-2 mb-4">Work Experience</h2>
+            <div id="experience-table-wrapper" class="table-responsive"></div>
+        </section>
+
+        <section id="education" class="mb-5">
+            <h2 class="h2 border-bottom pb-2 mb-4">Education</h2>
+            <div id="education-table-wrapper" class="table-responsive"></div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-footer text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">Contact: <a href="mailto:bradycm525@gmail.com" class="text-white text-decoration-none fw-bold">bradycm525@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
