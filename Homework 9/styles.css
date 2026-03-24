@@ -1,0 +1,42 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.bg-gradient-header {
+    background: linear-gradient(135deg, #1a2a3a 0%, #3a5a7a 100%);
+}
+
+.bg-gradient-footer {
+    background: linear-gradient(135deg, #3a5a7a 0%, #1a2a3a 100%);
+}
+
+
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+
+.nav-link {
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #1a2a3a !important;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
